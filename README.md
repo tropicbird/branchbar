@@ -66,12 +66,12 @@ web-app         —  feature/checkout    ← blue
 api-server      —  feature/checkout    ← blue, same branch
 mobile-app      —  main                ← orange
 design-system   —  main                ← orange
-infra-tools     —  chore/bump-deps     ← default color, nothing to compare with
+infra-tools     —  chore/bump-deps     ← green, a branch of its own
 ```
 
-A branch that only one repository is on stays in the default menu color: a color there would have nothing to pair with, and coloring everything turns into a meaningless rainbow. So **colored means "another repository is on this branch too."**
+Every branch gets a color, including one that only a single repository is on. Leaving those uncolored would put repositories that are on *different* branches into the same default color, which reads as if they were on the same one — the opposite of what the colors are for.
 
-The assignment is deterministic — the same set of branches always produces the same colors, so nothing flickers between openings. The palette holds nine colors that stay readable in both light and dark menus (no yellows); beyond nine shared branches it wraps around. Edit `palette` in `Sources/BranchStyle.swift` to change them.
+The assignment is deterministic — the same set of branches always produces the same colors, so nothing flickers between openings. The palette holds nine colors that stay readable in both light and dark menus (no yellows); past nine distinct branches it wraps around and colors start repeating. Edit `palette` in `Sources/BranchStyle.swift` to change them.
 
 ## How it works
 
