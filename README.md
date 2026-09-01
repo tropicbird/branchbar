@@ -4,21 +4,7 @@ A macOS menu bar app that shows the current branch of the local repositories you
 
 Click the branch icon (`⎇`) in the menu bar to see your repositories with their current branches. Click a row to open that repository in a terminal.
 
-```
-infra-tools      —  develop            ← repositories on the same branch share a color
-─ Frontend ──────────────────────
-   web-app       —  feature/login       ← groups get a header and indentation
-   design-system —  feature/login
-──────────────────────────────────
-Add Repositories…
-Reorder / Remove…
-──────────────────────────────────
-Terminal App: Terminal            ▸
-Language                          ▸
-✓ Open at Login
-──────────────────────────────────
-Quit
-```
+<img src="docs/menu.png" alt="The BranchBar menu: repositories grouped under Frontend and Backend headers, each row showing its current branch, with repositories on the same branch sharing a color" width="330">
 
 The interface is available in **English and Japanese**. It follows your macOS language setting by default, and **Language** in the menu lets you override it — the change applies immediately, no restart.
 
